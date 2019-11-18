@@ -6,7 +6,7 @@ bot.on('ready' , ()=> {
   console.log(`Bot Logging At Discord ${bot.user.tag}!`);
 });
 
-bot.in('message' , msg =>{
+bot.on('message' , msg =>{
   if (msg = content === 'ping'){
       msg.reply("Pong!");
   }
